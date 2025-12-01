@@ -14,7 +14,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           # Ganti ini dengan username asli Anda juga agar login berhasil
-          username: USERNAME_DOCKER_ANDA
+          username: nicholasxav
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Set up Docker Buildx
@@ -27,4 +27,4 @@ jobs:
           push: true
           target: final
           # Ganti USERNAME_DOCKER_ANDA dengan username asli Docker Hub Anda
-          tags: USERNAME_DOCKER_ANDA/${{ github.event.repository.name }}:latest
+          tags: nicholasxav/${{ github.event.repository.name }}:latest
