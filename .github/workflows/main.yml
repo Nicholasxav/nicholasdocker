@@ -14,7 +14,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           # Ganti ini dengan username asli Anda juga agar login berhasil
-          username: nicholasxav
+          username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Set up Docker Buildx
